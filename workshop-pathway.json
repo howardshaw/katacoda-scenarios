@@ -1,0 +1,12 @@
+{
+  "title": "Cloud Native Lab",
+  "description": "Cloud Native Labs",
+  "icon": "fa-katacoda",
+  "courses": [
+    {
+      "course_id": "cloud-native-workshop",
+      "title": "Cloud Native Workshop",
+      "description": "Show great feature of kubernetes"
+    }
+  ]
+}
