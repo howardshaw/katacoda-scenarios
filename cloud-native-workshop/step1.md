@@ -11,7 +11,7 @@
 `kubectl cluster-info`{{execute}}
 
 获取dashboard的token
-`kubectl get secret -n kubernetes-dashboard \$(kubectl get sa -n kubernetes-dashboard kubernetes-dashboard -o jsonpath='{.secrets[0].name}') -o jsonpath={.data.token} | base64 -d`{{execute}}
+`kubectl get secret -n kubernetes-dashboard $(kubectl get sa -n kubernetes-dashboard kubernetes-dashboard -o jsonpath='{.secrets[0].name}') -o jsonpath={.data.token} | base64 -d`{{execute}}
 
 最后，通过下面链接可以访问dashboard(需要输入上面的token)
 https://[[HOST_SUBDOMAIN]]-30443-[[KATACODA_HOST]].environments.katacoda.com
