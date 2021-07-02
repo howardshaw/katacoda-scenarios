@@ -24,6 +24,29 @@
         "text": "step5.md"
       }
     ],
+    "assets": {
+      "controlplane": [
+        {
+          "file": "dashboard.yaml",
+          "target": "/root"
+        },
+        {
+          "file": "load-generator.yaml",
+          "target": "/root"
+        },
+        {
+          "file": "metrics-server.yaml",
+          "target": "/root"
+        },
+        {
+          "file": "php-apache.yaml",
+          "target": "/root"
+        }
+      ]
+    },
+    "intro": {
+      "text": "intro.md"
+    },
     "finish": {
       "text": "finish.md"
     }
@@ -33,7 +56,11 @@
     "hideintro": true,
     "showdashboard": true,
     "dashboards": [
-      {"name": "Kubernetes Dashboard", "port": 30443}],
+      {
+        "name": "Kubernetes Dashboard",
+        "port": 30443
+      }
+    ],
     "uilayout": "terminal-iframe"
   },
   "backend": {
