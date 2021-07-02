@@ -1,11 +1,27 @@
 {
-  "title": "Kubernetes",
-  "description": "Multi node Kubernetes cluster configured using Kubeadm",
+  "title": "Kubernetes HPA Lab",
+  "description": "Kubernetes HPA Lab",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "创建和部署集群",
         "text": "step1.md"
+      },
+      {
+        "title": "部署业务",
+        "text": "step2.md"
+      },
+      {
+        "title": "创建弹性伸缩HPA",
+        "text": "step3.md"
+      },
+      {
+        "title": "业务高负载扩容",
+        "text": "step4.md"
+      },
+      {
+        "title": "业务空负载所容",
+        "text": "step5.md"
       }
     ],
     "finish": {
@@ -13,8 +29,12 @@
     }
   },
   "environment": {
+    "showide": true,
     "hideintro": true,
-    "uilayout": "terminal-terminal"
+    "showdashboard": true,
+    "dashboards": [
+      {"name": "Kubernetes Dashboard", "port": 30443}],
+    "uilayout": "terminal-iframe"
   },
   "backend": {
     "imageid": "kubernetes-cluster-running:1.18"
