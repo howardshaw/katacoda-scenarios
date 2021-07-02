@@ -57,7 +57,7 @@
     "showdashboard": true,
     "dashboards": [
       {
-        "name": "Kubernetes Dashboard",
+        "name": "Kubernetes看板",
         "port": 30443
       }
     ],
